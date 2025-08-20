@@ -1,0 +1,91 @@
+# Project Configuration
+
+# Data paths
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  train_data: "data/raw/train_data.csv"
+  train_labels: "data/raw/train_labels.csv"
+  test_data: "data/raw/test_data.csv"
+
+# Model configuration
+models:
+  output_dir: "models"
+  random_state: 42
+  cv_folds: 5
+  
+  # Model parameters
+  random_forest:
+    n_estimators: [100, 200, 300]
+    max_depth: [10, 20, null]
+    min_samples_split: [2, 5, 10]
+    min_samples_leaf: [1, 2, 4]
+  
+  xgboost:
+    n_estimators: [100, 200, 300]
+    max_depth: [3, 6, 10]
+    learning_rate: [0.01, 0.1, 0.2]
+    subsample: [0.8, 0.9, 1.0]
+  
+  lightgbm:
+    n_estimators: [100, 200, 300]
+    max_depth: [3, 6, 10]
+    learning_rate: [0.01, 0.1, 0.2]
+    num_leaves: [31, 50, 100]
+
+# Feature engineering
+features:
+  selection_method: "SelectKBest"
+  k_best_features: 1000
+  variance_threshold: 0.01
+  correlation_threshold: 0.8
+  
+  # Feature engineering options
+  create_statistical_features: true
+  create_interaction_features: false  # Can be expensive
+  create_aggregation_features: true
+  
+  # PCA options
+  apply_pca: false
+  pca_components: 50
+  pca_variance_threshold: 0.95
+
+# Preprocessing
+preprocessing:
+  scale_features: true
+  fill_missing_values: true
+  remove_constant_features: true
+  remove_low_variance_features: true
+
+# Evaluation
+evaluation:
+  test_size: 0.2
+  scoring_metrics:
+    - "accuracy"
+    - "precision_weighted"
+    - "recall_weighted"
+    - "f1_weighted"
+  
+  # Confidence thresholds
+  high_confidence_threshold: 0.9
+  low_confidence_threshold: 0.6
+
+# Visualization
+visualization:
+  figure_size: [12, 8]
+  color_palette: "husl"
+  save_figures: true
+  figure_dpi: 300
+  output_dir: "reports/figures"
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/training.log"
+
+# Environment
+environment:
+  python_version: ">=3.8"
+  cuda_available: false
+  n_jobs: -1  # Use all available cores
