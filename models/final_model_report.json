@@ -18,8 +18,8 @@
       "verbose": 0,
       "warm_start": false
     },
-    "training_date": "2025-08-20T14:39:40.404773",
-    "training_time_seconds": 0.064464
+    "training_date": "2025-08-20T15:43:17.959364",
+    "training_time_seconds": 0.062842
   },
   "data_info": {
     "training_samples": 159,
@@ -54,7 +54,7 @@
     }
   },
   "files_created": {
-    "model": "final_model_logisticregression_20250820_143940.pkl",
+    "model": "final_model_logisticregression_20250820_154317.pkl",
     "scaler": "final_scaler.pkl",
     "feature_selector": "final_feature_selector.pkl",
     "label_encoder": null,
