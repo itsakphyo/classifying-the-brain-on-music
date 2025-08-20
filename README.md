@@ -89,10 +89,6 @@ The dataset contains brain activity measurements with the following files:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- [Add any acknowledgments, data sources, or inspirations here]
-
 ## Contact
 
-[Add your contact information or how to reach the project maintainers]
+itsakphyo@gmail.com

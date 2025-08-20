@@ -1,0 +1,64 @@
+{
+  "model_info": {
+    "model_name": "LogisticRegression",
+    "model_parameters": {
+      "C": 1,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": null,
+      "max_iter": 1000,
+      "multi_class": "deprecated",
+      "n_jobs": null,
+      "penalty": "l2",
+      "random_state": 42,
+      "solver": "liblinear",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "training_date": "2025-08-20T14:39:40.404773",
+    "training_time_seconds": 0.064464
+  },
+  "data_info": {
+    "training_samples": 159,
+    "features_used": 1000,
+    "total_original_features": 22036,
+    "test_samples": 39,
+    "target_classes": 5,
+    "feature_selection_method": "SelectKBest with f_classif"
+  },
+  "performance": {
+    "training_accuracy": 1.0,
+    "training_f1_weighted": 1.0,
+    "learning_curve_final_train": 1.0,
+    "learning_curve_final_val": 0.8116935483870968
+  },
+  "predictions": {
+    "test_samples_predicted": 39,
+    "prediction_distribution": {
+      "0": 11,
+      "1": 7,
+      "2": 5,
+      "3": 11,
+      "4": 5
+    },
+    "confidence_stats": {
+      "mean_confidence": 0.6551701271683101,
+      "std_confidence": 0.1688850804093832,
+      "min_confidence": 0.3915345757399408,
+      "max_confidence": 0.9757731291311587,
+      "high_confidence_count": 2,
+      "low_confidence_count": 16
+    }
+  },
+  "files_created": {
+    "model": "final_model_logisticregression_20250820_143940.pkl",
+    "scaler": "final_scaler.pkl",
+    "feature_selector": "final_feature_selector.pkl",
+    "label_encoder": null,
+    "predictions": "test_predictions.csv",
+    "feature_importance": null
+  }
+}

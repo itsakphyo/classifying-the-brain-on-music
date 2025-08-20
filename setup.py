@@ -15,12 +15,12 @@ with open('README.md', 'r', encoding='utf-8') as f:
 setup(
     name="brain-music-classification",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Aung Khant Phyo",
+    author_email="itsakphyo@gmail.com",
     description="Machine learning project for classifying brain activity patterns in response to music",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/classifying-the-brain-on-music",
+    url="https://github.com/itsakphyo/classifying-the-brain-on-music",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     classifiers=[
