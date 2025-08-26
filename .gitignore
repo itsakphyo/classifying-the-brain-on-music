@@ -174,3 +174,18 @@ Thumbs.db
 # Logs
 logs/
 *.log
+
+# Project-specific ignores
+# Ignore all files under config directory
+config/
+
+# Ignore all files under reports directory
+reports/
+
+# Ignore all files under src directory
+src/
+
+# Ignore specific files
+run_pipeline.py
+setup.py
+environment.yml

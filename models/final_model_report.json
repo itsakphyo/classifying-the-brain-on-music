@@ -18,14 +18,14 @@
       "verbose": 0,
       "warm_start": false
     },
-    "training_date": "2025-08-20T15:43:17.959364",
-    "training_time_seconds": 0.062842
+    "training_date": "2025-08-26T21:19:56.238413",
+    "training_time_seconds": 0.081892
   },
   "data_info": {
-    "training_samples": 159,
+    "training_samples": 160,
     "features_used": 1000,
     "total_original_features": 22036,
-    "test_samples": 39,
+    "test_samples": 40,
     "target_classes": 5,
     "feature_selection_method": "SelectKBest with f_classif"
   },
@@ -33,28 +33,28 @@
     "training_accuracy": 1.0,
     "training_f1_weighted": 1.0,
     "learning_curve_final_train": 1.0,
-    "learning_curve_final_val": 0.8116935483870968
+    "learning_curve_final_val": 0.8125
   },
   "predictions": {
-    "test_samples_predicted": 39,
+    "test_samples_predicted": 40,
     "prediction_distribution": {
-      "0": 11,
-      "1": 7,
-      "2": 5,
+      "0": 12,
+      "1": 6,
+      "2": 6,
       "3": 11,
       "4": 5
     },
     "confidence_stats": {
-      "mean_confidence": 0.6551701271683101,
-      "std_confidence": 0.1688850804093832,
-      "min_confidence": 0.3915345757399408,
-      "max_confidence": 0.9757731291311587,
-      "high_confidence_count": 2,
-      "low_confidence_count": 16
+      "mean_confidence": 0.6502259511320203,
+      "std_confidence": 0.17489889359252783,
+      "min_confidence": 0.3136475575891562,
+      "max_confidence": 0.9757007928491002,
+      "high_confidence_count": 3,
+      "low_confidence_count": 18
     }
   },
   "files_created": {
-    "model": "final_model_logisticregression_20250820_154317.pkl",
+    "model": "final_model_logisticregression_20250826_211956.pkl",
     "scaler": "final_scaler.pkl",
     "feature_selector": "final_feature_selector.pkl",
     "label_encoder": null,
